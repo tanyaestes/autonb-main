@@ -4,9 +4,9 @@ def browserSetup(browser, productionServer):
         browser.get('https://uca.pbs.vmc.navblue.cloud/cgi-bin-xml/class/main.cgi')
         try:
             empNum = browser.find_element_by_name('EmployeeNumber')
-            empNum.send_keys('testes')
+            empNum.send_keys('######')
             passwordElem = browser.find_element_by_name('Password')
-            passwordElem.send_keys('120481')
+            passwordElem.send_keys('#####')
             passwordElem.submit()
             print('Logged in')
             print()
